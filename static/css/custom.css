@@ -1,0 +1,33 @@
+/* Custom styles - Lorenzo Lombardi Site */
+/* Questo file estende il tema PaperMod */
+
+/* Tabelle più leggibili */
+.post-content table {
+    width: 100%;
+    margin: 1.5rem 0;
+}
+
+.post-content table th {
+    background-color: var(--code-bg);
+}
+
+/* Pulsante download CV */
+a.button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary);
+    color: var(--theme) !important;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+a.button:hover {
+    opacity: 0.9;
+}
+
+/* Pixel art decorations */
+.pixel-art {
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}

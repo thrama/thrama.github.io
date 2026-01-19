@@ -1,0 +1,4 @@
+{{- $src := .Get "src" -}}
+{{- $width := .Get "width" | default "96" -}}
+{{- $alt := .Get "alt" | default "" -}}
+<img src="{{ $src }}" width="{{ $width }}" alt="{{ $alt }}" style="image-rendering: pixelated; image-rendering: crisp-edges;" />

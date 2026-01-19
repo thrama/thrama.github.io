@@ -1,0 +1,105 @@
+baseURL = "https://thrama.github.io/"
+languageCode = "it"
+defaultContentLanguage = "it"
+title = "Lorenzo Lombardi"
+theme = "PaperMod"
+
+# Paginazione
+[pagination]
+  pagerSize = 10
+
+# Abilita emoji
+enableEmoji = false
+
+# Build settings
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+
+[params]
+  author = "Lorenzo Lombardi"
+  description = "Principal Data Architect | Data Governance & Informatica Expert"
+
+  # Tema
+  defaultTheme = "auto"  # auto, light, dark
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = false
+  ShowToc = true
+  TocOpen = false
+
+  # Home page
+  homeInfoParams.Title = "Lorenzo Lombardi"
+  homeInfoParams.Content = """
+Principal Data Architect @ NTT DATA Italia
+20+ anni di esperienza in Enterprise Data Management
+Specializzato in Data Governance e prodotti Informatica
+"""
+
+  # Social icons (header)
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://linkedin.com/in/lorenzolombardi"
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/thrama"
+
+  [[params.socialIcons]]
+    name = "email"
+    url = "lorenzo [dot] lombardi [at] gmail [dot] com"
+
+  # Profilo immagine (opzionale)
+  # profileMode.enabled = true
+  # profileMode.title = "Lorenzo Lombardi"
+  # profileMode.imageUrl = "/images/profile.jpg"
+  # profileMode.imageWidth = 120
+  # profileMode.imageHeight = 120
+
+# Menu principale
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "Chi Sono"
+    url = "/about/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "cv"
+    name = "CV"
+    url = "/cv/"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "progetti"
+    name = "Progetti"
+    url = "/progetti/"
+    weight = 30
+
+  [[menu.main]]
+    identifier = "posts"
+    name = "Articoli"
+    url = "/posts/"
+    weight = 40
+
+  [[menu.main]]
+    identifier = "links"
+    name = "Links"
+    url = "/links/"
+    weight = 50
+
+# Output formats
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# Markup settings
+[markup]
+  [markup.highlight]
+    style = "dracula"
+    lineNos = false
+    codeFences = true
+  [markup.goldmark.renderer]
+    unsafe = true
