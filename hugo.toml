@@ -1,4 +1,5 @@
-baseURL = "https://thrama.github.io/"
+#baseURL = "https://thrama.github.io/"
+baseURL = "http://localhost:1313/"
 languageCode = "it"
 defaultContentLanguage = "it"
 title = "Lorenzo Lombardi"
