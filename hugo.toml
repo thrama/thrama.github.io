@@ -1,8 +1,40 @@
 baseURL = "https://thrama.github.io/"
-languageCode = "it"
 defaultContentLanguage = "it"
 title = "Lorenzo Lombardi"
 theme = "PaperMod"
+
+[languages]
+  [languages.it]
+    languageCode = "it"
+    languageName = "Italiano"
+    contentDir = "content/it"
+    weight = 1
+    title = "Lorenzo Lombardi"
+    [languages.it.params]
+      description = "Principal Data Architect | Data Governance & Informatica Expert"
+    [languages.it.params.homeInfoParams]
+      Title = "Lorenzo Lombardi"
+      Content = """
+Principal Data Architect @ NTT DATA Italia
+20+ anni di esperienza in Enterprise Data Management
+Specializzato in Data Governance e prodotti Informatica
+"""
+
+  [languages.en]
+    languageCode = "en"
+    languageName = "English"
+    contentDir = "content/en"
+    weight = 2
+    title = "Lorenzo Lombardi"
+    [languages.en.params]
+      description = "Principal Data Architect | Data Governance & Informatica Expert"
+    [languages.en.params.homeInfoParams]
+      Title = "Lorenzo Lombardi"
+      Content = """
+Principal Data Architect @ NTT DATA Italia
+20+ years of experience in Enterprise Data Management
+Specialized in Data Governance and Informatica products
+"""
 
 # Paginazione
 [pagination]
@@ -31,14 +63,6 @@ buildFuture = false
   ShowToc = true
   TocOpen = false
 
-  # Home page
-  homeInfoParams.Title = "Lorenzo Lombardi"
-  homeInfoParams.Content = """
-Principal Data Architect @ NTT DATA Italia
-20+ anni di esperienza in Enterprise Data Management
-Specializzato in Data Governance e prodotti Informatica
-"""
-
   # Social icons (header)
   [[params.socialIcons]]
     name = "linkedin"
@@ -52,44 +76,67 @@ Specializzato in Data Governance e prodotti Informatica
     name = "email"
     url = "lorenzo [dot] lombardi [at] gmail [dot] com"
 
-  # Profilo immagine (opzionale)
-  # profileMode.enabled = true
-  # profileMode.title = "Lorenzo Lombardi"
-  # profileMode.imageUrl = "/images/profile.jpg"
-  # profileMode.imageWidth = 120
-  # profileMode.imageHeight = 120
+# Menu italiano
+[[languages.it.menu.main]]
+  identifier = "about"
+  name = "Chi Sono"
+  url = "/about/"
+  weight = 10
 
-# Menu principale
-[menu]
-  [[menu.main]]
-    identifier = "about"
-    name = "Chi Sono"
-    url = "/about/"
-    weight = 10
+[[languages.it.menu.main]]
+  identifier = "cv"
+  name = "CV"
+  url = "/cv/"
+  weight = 20
 
-  [[menu.main]]
-    identifier = "cv"
-    name = "CV"
-    url = "/cv/"
-    weight = 20
+[[languages.it.menu.main]]
+  identifier = "progetti"
+  name = "Progetti"
+  url = "/progetti/"
+  weight = 30
 
-  [[menu.main]]
-    identifier = "progetti"
-    name = "Progetti"
-    url = "/progetti/"
-    weight = 30
+[[languages.it.menu.main]]
+  identifier = "posts"
+  name = "Articoli"
+  url = "/posts/"
+  weight = 40
 
-  [[menu.main]]
-    identifier = "posts"
-    name = "Articoli"
-    url = "/posts/"
-    weight = 40
+[[languages.it.menu.main]]
+  identifier = "links"
+  name = "Links"
+  url = "/links/"
+  weight = 50
 
-  [[menu.main]]
-    identifier = "links"
-    name = "Links"
-    url = "/links/"
-    weight = 50
+# Menu inglese
+[[languages.en.menu.main]]
+  identifier = "about"
+  name = "About"
+  url = "/en/about/"
+  weight = 10
+
+[[languages.en.menu.main]]
+  identifier = "cv"
+  name = "CV"
+  url = "/en/cv/"
+  weight = 20
+
+[[languages.en.menu.main]]
+  identifier = "projects"
+  name = "Projects"
+  url = "/en/projects/"
+  weight = 30
+
+[[languages.en.menu.main]]
+  identifier = "posts"
+  name = "Articles"
+  url = "/en/posts/"
+  weight = 40
+
+[[languages.en.menu.main]]
+  identifier = "links"
+  name = "Links"
+  url = "/en/links/"
+  weight = 50
 
 # Output formats
 [outputs]

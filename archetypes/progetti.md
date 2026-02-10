@@ -24,7 +24,7 @@ ShowToc: true
 
 ## Repository
 
-🔗 [GitHub](https://github.com/lorenzolombardi/nome-repo)
+🔗 [GitHub](https://github.com/thrama/nome-repo)
 
 ## Installazione
 

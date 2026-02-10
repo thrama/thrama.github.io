@@ -1,6 +1,13 @@
 # Lorenzo Lombardi - Personal Site
 
-Sito personale costruito con [Hugo](https://gohugo.io/) e tema [PaperMod](https://github.com/adityatelange/hugo-PaperMod).
+Sito personale bilingue (🇮🇹 Italiano / 🇬🇧 English) costruito con [Hugo](https://gohugo.io/) e tema [PaperMod](https://github.com/adityatelange/hugo-PaperMod).
+
+## 🌍 Multilingua
+
+Il sito supporta italiano e inglese con:
+- Contenuti separati in `content/it/` e `content/en/`
+- Selettore di lingua nel menu
+- URL localizzati (es. `/about/` e `/en/about/`)
 
 ## 🚀 Quick Start (Windows)
 
@@ -21,12 +28,6 @@ choco install hugo-extended
 scoop install hugo-extended
 ```
 
-**Opzione D - Download manuale:**
-1. Vai su https://github.com/gohugoio/hugo/releases
-2. Scarica `hugo_extended_X.XXX.X_windows-amd64.zip`
-3. Estrai in una cartella (es. `C:\Hugo\bin`)
-4. Aggiungi la cartella al PATH di sistema
-
 Verifica l'installazione:
 ```powershell
 hugo version
@@ -35,24 +36,13 @@ hugo version
 ### 2. Setup Progetto
 
 ```powershell
-# Clona il tuo repository
+# Clona il repository
 git clone https://github.com/thrama/thrama.github.io.git
 cd thrama.github.io
 
-# Copia il contenuto dello ZIP estratto nella cartella del repo
-# (oppure estrai direttamente qui)
-
 # Installa il tema PaperMod come submodule
 git submodule add https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod
-```
-
-**Alternativa senza Git submodule:**
-```powershell
-# Scarica e estrai manualmente il tema
-Invoke-WebRequest -Uri "https://github.com/adityatelange/hugo-PaperMod/archive/master.zip" -OutFile "papermod.zip"
-Expand-Archive -Path "papermod.zip" -DestinationPath "themes"
-Rename-Item "themes\hugo-PaperMod-master" "themes\PaperMod"
-Remove-Item "papermod.zip"
+git submodule update --init --recursive
 ```
 
 ### 3. Avvio Server Locale
@@ -63,81 +53,88 @@ hugo server -D
 
 Apri http://localhost:1313 nel browser.
 
-> **Tip:** Usa Windows Terminal o VS Code integrato per una migliore esperienza.
-
-## 📁 Struttura
+## 📁 Struttura Multilingua
 
 ```
-lorenzo-site/
-├── archetypes/          # Template per nuovi contenuti
-│   ├── posts.md         # Template articoli
-│   └── progetti.md      # Template progetti
+thrama-site/
 ├── content/
-│   ├── about.md         # Pagina Chi Sono
-│   ├── cv.md            # Curriculum Vitae
-│   ├── posts/           # Articoli
-│   ├── progetti/        # Progetti
-│   └── links/           # Links e risorse
+│   ├── it/                 # Contenuti italiani
+│   │   ├── about.md
+│   │   ├── cv.md
+│   │   ├── posts/
+│   │   ├── progetti/
+│   │   └── links/
+│   └── en/                 # Contenuti inglesi
+│       ├── about.md
+│       ├── cv.md
+│       ├── posts/
+│       ├── projects/       # Nome diverso per progetti
+│       └── links/
+├── archetypes/
+│   ├── posts.md           # Template italiano
+│   ├── posts.en.md        # Template inglese
+│   ├── progetti.md
+│   └── projects.md
 ├── layouts/
-│   └── shortcodes/      # Shortcode custom
+│   ├── partials/
+│   │   └── extend_head.html
+│   └── shortcodes/
+│       ├── pixelart.html
+│       └── rawhtml.html
 ├── static/
-│   ├── css/custom.css   # Stili personalizzati
-│   ├── images/          # Immagini
-│   └── files/           # PDF, documenti
-├── hugo.toml            # Configurazione principale
-└── README.md
+│   ├── css/custom.css
+│   └── images/
+└── hugo.toml              # Config multilingua
 ```
 
 ## ✍️ Creare Nuovi Contenuti
 
-### Nuovo Articolo
+### Nuovo Articolo (Italiano)
 
 ```bash
-hugo new posts/titolo-articolo.md
+hugo new it/posts/titolo-articolo.md
 ```
 
-### Nuovo Progetto
+### Nuovo Articolo (Inglese)
 
 ```bash
-hugo new progetti/nome-progetto.md
+hugo new en/posts/article-title.md
 ```
 
-I file vengono creati con `draft: true`. Rimuovi o imposta `false` per pubblicare.
+### Nuovo Progetto (Italiano)
 
-## ⚙️ Configurazione
+```bash
+hugo new it/progetti/nome-progetto.md
+```
 
-Modifica `hugo.toml` per:
+### Nuovo Progetto (Inglese)
 
-- **baseURL**: Il tuo dominio
-- **title**: Nome del sito
-- **params.socialIcons**: I tuoi link social
-- **menu.main**: Voci del menu
+```bash
+hugo new en/projects/project-name.md
+```
 
-## 🎨 Personalizzazione
+## ⚙️ Configurazione Multilingua
 
-### CSS Custom
-
-Aggiungi stili in `static/css/custom.css`, poi referenzialo in `hugo.toml`:
+Il file `hugo.toml` contiene la configurazione per entrambe le lingue:
 
 ```toml
-[params]
-  customCSS = ["css/custom.css"]
+defaultContentLanguage = "it"
+
+[languages]
+  [languages.it]
+    languageCode = "it"
+    languageName = "Italiano"
+    weight = 1
+    # Menu italiano...
+
+  [languages.en]
+    languageCode = "en"
+    languageName = "English"
+    weight = 2
+    # Menu inglese...
 ```
 
-### Immagine Profilo
-
-1. Aggiungi l'immagine in `static/images/profile.jpg`
-2. Decommenta in `hugo.toml`:
-
-```toml
-[params]
-  profileMode.enabled = true
-  profileMode.imageUrl = "/images/profile.jpg"
-```
-
-## 🚀 Deploy
-
-### GitHub Pages (il tuo repo: thrama/thrama.github.io)
+## 🚀 Deploy su GitHub Pages
 
 Il workflow `.github/workflows/hugo.yaml` è già configurato. Per pubblicare:
 
@@ -146,30 +143,16 @@ Il workflow `.github/workflows/hugo.yaml` è già configurato. Per pubblicare:
 git add .
 
 # Commit
-git commit -m "Initial site setup"
+git commit -m "Add multilingual support"
 
 # Push
 git push origin main
 ```
 
-**Configurazione GitHub (una tantum):**
-1. Vai su https://github.com/thrama/thrama.github.io/settings/pages
-2. In **Source** seleziona: `GitHub Actions`
-3. Il sito sarà disponibile su: **https://thrama.github.io**
+Il sito sarà disponibile su: **https://thrama.github.io**
 
-Il deploy avviene automaticamente ad ogni push su `main`.
-
-### Netlify
-
-1. Connetti il repository a Netlify
-2. Build command: `hugo --minify`
-3. Publish directory: `public`
-
-### Cloudflare Pages
-
-1. Connetti il repository
-2. Framework preset: Hugo
-3. Build command: `hugo --minify`
+- Homepage italiana: `https://thrama.github.io/`
+- Homepage inglese: `https://thrama.github.io/en/`
 
 ## 📝 Comandi Utili (PowerShell)
 
@@ -177,57 +160,38 @@ Il deploy avviene automaticamente ad ogni push su `main`.
 # Server con draft visibili
 hugo server -D
 
-# Server con live reload su rete locale (per test da mobile)
-hugo server -D --bind 0.0.0.0
-
 # Build produzione
 hugo --minify
 
-# Nuovo articolo
-hugo new posts/nuovo-articolo.md
+# Nuovo articolo italiano
+hugo new it/posts/nuovo-articolo.md
 
-# Nuovo progetto
-hugo new progetti/nome-progetto.md
+# Nuovo articolo inglese
+hugo new en/posts/new-article.md
 
 # Verifica configurazione
 hugo config
 
-# Pulizia cache
-Remove-Item -Recurse -Force resources\_gen -ErrorAction SilentlyContinue
+# Lista contenuti
+hugo list all
 ```
 
-## 🛠️ Setup Consigliato per Windows
+## 🎨 Personalizzazione
 
-### Editor
-- **VS Code** con estensioni:
-  - `Better TOML` - syntax highlighting per hugo.toml
-  - `Markdown All in One` - preview e shortcuts
-  - `Hugo Language and Syntax Support`
+### CSS Custom
 
-### Terminal
-- **Windows Terminal** (da Microsoft Store)
-- Oppure il terminale integrato di VS Code
+Modifica `static/css/custom.css` per personalizzare lo stile.
 
-### Git
-- **Git for Windows**: https://git-scm.com/download/win
-- Oppure **GitHub Desktop** se preferisci GUI
+### Shortcodes
+
+- `{{< pixelart src="/images/icon.png" width="64" >}}` - Rendering pixel art
+- `{{< rawhtml >}}HTML qui{{< /rawhtml >}}` - HTML raw
 
 ## 📚 Risorse
 
 - [Hugo Documentation](https://gohugo.io/documentation/)
+- [Hugo Multilingual Mode](https://gohugo.io/content-management/multilingual/)
 - [PaperMod Wiki](https://github.com/adityatelange/hugo-PaperMod/wiki)
-- [Hugo Themes](https://themes.gohugo.io/)
-
----
-
-## TODO
-
-- [ ] Aggiornare informazioni CV
-- [ ] Aggiungere foto profilo
-- [ ] Completare link social
-- [ ] Scrivere primo articolo
-- [ ] Configurare dominio custom
-- [ ] Setup analytics (opzionale)
 
 ---
 
