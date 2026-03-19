@@ -1,5 +1,5 @@
 ---
-title: "Chi Sono"
+title: "About Me"
 date: 2024-01-01
 draft: false
 ShowToc: false
@@ -8,25 +8,25 @@ ShowBreadCrumbs: false
 
 ## Lorenzo Lombardi
 
-**Principal Data Architect** presso NTT DATA Italia, con oltre 20 anni di esperienza nel campo dell'Enterprise Data Management.
+**Principal Data Architect** at NTT DATA Italia, with over 20 years of experience in Enterprise Data Management.
 
-Due decenni fa, quando le stampanti ad aghi e i fax erano ancora diffusi, ho deciso di intraprendere una carriera nel mondo dell'informatica, un settore in continua evoluzione e con un potenziale illimitato di crescita e trasformazione.
+Two decades ago, when dot matrix printers and fax machines were still widespread, I decided to pursue a career in IT, a constantly evolving sector with unlimited potential for growth and transformation.
 
-Nel corso della mia carriera ho ricoperto diversi ruoli, tra cui IT Manager, Head of Deliverability e Product Manager. Queste esperienze mi hanno insegnato l'importanza di usare il passato come guida, senza lasciare che diventi un freno. È fondamentale rimanere aperti alle nuove idee e non restare intrappolati nelle vecchie certezze.
+Throughout my career, I have held various roles, including IT Manager, Head of Deliverability, and Product Manager. These experiences have taught me the importance of using the past as a guide without letting it become a constraint. It's essential to remain open to new ideas and not get trapped in old certainties.
 
-### Cosa faccio oggi
+### What I Do Today
 
-In NTT DATA guido iniziative di data governance e sviluppo soluzioni architetturali complesse per clienti enterprise. Supervisiono inoltre l'Informatica Competence Center, che abbiamo reso il punto di riferimento per le implementazioni e le best practice Informatica.
+At NTT DATA, I lead data governance initiatives and develop complex architectural solutions for enterprise clients. I also oversee the Informatica Competence Center, which we've established as the reference point for Informatica implementations and best practices.
 
-### Specializzazioni
+### Specializations
 
-- **Data Governance** - Framework, policy e processi per la gestione dei dati aziendali
-- **Data Architecture** - Progettazione di soluzioni enterprise scalabili
+- **Data Governance** - Frameworks, policies, and processes for enterprise data management
+- **Data Architecture** - Design of scalable enterprise solutions
 - **Informatica Suite** - PowerCenter, Data Quality, Enterprise Data Catalog (EDC), Axon, IDMC
-- **Data Quality** - Strategie e sistemi di monitoraggio automatizzato
-- **Data Lineage** - Soluzioni di metadata management per compliance e data trust
+- **Data Quality** - Strategies and automated monitoring systems
+- **Data Lineage** - Metadata management solutions for compliance and data trust
 
-### Certificazioni
+### Certifications
 
 - GPTS-CLAIRE AI Foundation Certification
 - ITIL 4 Foundation Certificate in IT Service Management
@@ -34,18 +34,18 @@ In NTT DATA guido iniziative di data governance e sviluppo soluzioni architettur
 - Career Essentials in Generative AI (Microsoft & LinkedIn)
 - GenAI - White Belt Journey
 
-### Lingue
+### Languages
 
-- 🇮🇹 Italiano (madrelingua)
-- 🇬🇧 Inglese (professionale)
-- 🇫🇷 Francese (base)
+- 🇮🇹 Italian (native)
+- 🇬🇧 English (professional)
+- 🇫🇷 French (basic)
 
-### Dove mi trovi
+### Find Me
 
-📍 Crema, Lombardia, Italia
+📍 Crema, Lombardy, Italy
 
 📧 [lorenzo.lombardi@gmail.com](mailto:lorenzo.lombardi@gmail.com)
 
 ---
 
-_Questo sito è il mio spazio personale dove condivido progetti, articoli tecnici e risorse utili nel campo del data management._
+_This is my personal space where I share projects, technical articles, and useful resources in the field of data management._

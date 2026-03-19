@@ -7,173 +7,173 @@ TocOpen: true
 ShowBreadCrumbs: true
 ---
 
-## Profilo Professionale
+## Professional Profile
 
-Principal Data Architect con oltre 20 anni di esperienza in Enterprise Data Management. Specializzato nella progettazione e implementazione di soluzioni di Data Governance utilizzando la suite Informatica. Esperienza consolidata in contesti enterprise complessi nei settori banking, insurance, service e government, con focus su qualità del dato, catalogazione e lineage.
+Principal Data Architect with over 20 years of experience in Enterprise Data Management. Specialized in designing and implementing Data Governance solutions using the Informatica suite. Proven track record in complex enterprise environments across banking, insurance, service, and government sectors, focusing on data quality, cataloging, and lineage.
 
 ---
 
-## Esperienza Professionale
+## Professional Experience
 
 ### Principal Data Architect
 
-**NTT DATA Italia** | Milano | _Aprile 2023 - Presente_
+**NTT DATA Italia** | Milan | _April 2023 - Present_
 
-Nel team Data Intelligence & AI, guido iniziative di data governance e sviluppo soluzioni architetturali complesse per clienti enterprise. Supervisiono l'Informatica Competence Center, punto di riferimento per implementazioni e best practice.
+Within the Data Intelligence & AI team, I lead data governance initiatives and develop complex architectural solutions for enterprise clients. I oversee the Informatica Competence Center, serving as the reference point for implementations and best practices.
 
-**Responsabilità principali:**
+**Key Responsibilities:**
 
-- Progettazione e implementazione di framework di data governance
-- Architetture enterprise con tecnologie Informatica (PowerCenter, Data Quality, EDC, Axon, IDMC)
-- Leadership dell'Informatica Competence Center: standard, metodologie e formazione
-- Strategie di data quality e sistemi di monitoraggio automatizzato
-- Soluzioni di data lineage e metadata management per compliance
-- Guida di team cross-funzionali in progetti di data transformation
-- Sviluppo soluzioni Python per data processing e analysis
+- Design and implementation of data governance frameworks
+- Enterprise architectures with Informatica technologies (PowerCenter, Data Quality, EDC, Axon, IDMC)
+- Leadership of the Informatica Competence Center: standards, methodologies, and training
+- Data quality strategies and automated monitoring systems
+- Data lineage and metadata management solutions for compliance
+- Leading cross-functional teams in data transformation projects
+- Development of Python solutions for data processing and analysis
 
 ---
 
 ### Senior Professional Services Consultant
 
-**Informatica** | Milano | _Ottobre 2020 - Marzo 2023_
+**Informatica** | Milan | _October 2020 - March 2023_
 
-Consulenza specializzata su Axon, Enterprise Data Catalog (EDC), Data Quality, PowerCenter, Dynamic Data Masking (DDM) e IDMC per clienti nei settori banking, insurance, service e government.
+Specialized consulting on Axon, Enterprise Data Catalog (EDC), Data Quality, PowerCenter, Dynamic Data Masking (DDM), and IDMC for clients in banking, insurance, service, and government sectors.
 
-**Attività principali:**
+**Main Activities:**
 
-- Installazione e manutenzione prodotti Informatica su architetture on-premise e cloud
-- Implementazione di data governance e dynamic data masking
-- Supporto clienti nella protezione dei dati sensibili e conformità normativa
+- Installation and maintenance of Informatica products on on-premise and cloud architectures
+- Implementation of data governance and dynamic data masking
+- Client support in sensitive data protection and regulatory compliance
 
 ---
 
 ### Product Manager
 
-**Revevol Group** | Milano | _Dicembre 2019 - Settembre 2020_
+**Revevol Group** | Milan | _December 2019 - September 2020_
 
-Gestione del prodotto YAMM (Yet Another Mail Merge), soluzione per email campaign management nell'ecosistema Google.
+Product management for YAMM (Yet Another Mail Merge), an email campaign management solution in the Google ecosystem.
 
-**Risultati:**
+**Results:**
 
-- Fatturato annuo: ~2 milioni di euro
-- Oltre 4 milioni di download su G Suite Marketplace
+- Annual revenue: ~€2 million
+- Over 4 million downloads on G Suite Marketplace
 
-**Responsabilità:**
+**Responsibilities:**
 
-- Gestione operativa quotidiana (supporto clienti, testing)
-- Sviluppo ed esecuzione della product roadmap
-- Prioritizzazione feature tramite data analysis e user feedback
+- Daily operational management (customer support, testing)
+- Development and execution of product roadmap
+- Feature prioritization through data analysis and user feedback
 
 ---
 
 ### Head of Deliverability & Platform Product Lead
 
-**Ketchup Adv SpA** | Milano | _Marzo 2019 - Novembre 2019_
+**Ketchup Adv SpA** | Milan | _March 2019 - November 2019_
 
-Responsabile della deliverability email e della piattaforma di mailing BeMail.
+Responsible for email deliverability and the BeMail mailing platform.
 
-**Attività:**
+**Activities:**
 
-- Analisi quotidiana e configurazione MTA per migliorare le performance
-- System engineering: installazione e configurazione ambiente virtuale (MailerQ, RabbitMQ, MongoDB, MySQL, Linux su VMWare)
-- Pianificazione migrazione infrastruttura
-- Specifiche per gestione bounce e FBL
-- Algoritmi di analisi periodica e real-time per qualità DB
+- Daily analysis and MTA configuration to improve performance
+- System engineering: installation and configuration of virtual environment (MailerQ, RabbitMQ, MongoDB, MySQL, Linux on VMware)
+- Infrastructure migration planning
+- Specifications for bounce and FBL management
+- Periodic and real-time analysis algorithms for database quality
 
 ---
 
 ### Product Manager
 
-**EmailSuccess - Diennea** | Faenza | _Maggio 2017 - Febbraio 2019_
+**EmailSuccess - Diennea** | Faenza | _May 2017 - February 2019_
 
-Gestione del prodotto EmailSuccess, MTA ottimizzato per invio di grandi volumi email.
+Management of EmailSuccess product, an MTA optimized for high-volume email sending.
 
-**Responsabilità:**
+**Responsibilities:**
 
-- Coordinamento sviluppo e roadmap
-- Documentazione prodotto
-- Pre-sales: analisi requisiti tecnici per performance ottimali
-- Lead generation e brand awareness
+- Development coordination and roadmap
+- Product documentation
+- Pre-sales: technical requirements analysis for optimal performance
+- Lead generation and brand awareness
 
 ---
 
 ### Software Test Engineer & Senior System Engineer
 
-**Klan.IT S.r.l.** | Cremona | _Novembre 2016 - Aprile 2017_
+**Klan.IT S.r.l.** | Cremona | _November 2016 - April 2017_
 
-Consulenza per Fresenius Medical Care sul progetto Therapy Support Suite (TSS), dispositivo medico con certificazione CE.
+Consulting for Fresenius Medical Care on the Therapy Support Suite (TSS) project, a CE-certified medical device.
 
-- Amministrazione infrastruttura virtuale
-- Test avanzati su DB, sistemi operativi e network
+- Virtual infrastructure administration
+- Advanced testing on databases, operating systems, and networks
 
 ---
 
 ### Head of Email Deliverability
 
-**Jobtome International SA** | Mendrisio (CH) | _Luglio 2015 - Ottobre 2016_
+**Jobtome International SA** | Mendrisio (CH) | _July 2015 - October 2016_
 
-Gestione deliverability per il motore di ricerca lavoro presente in 32 paesi.
+Deliverability management for the job search engine present in 32 countries.
 
-- Configurazione e gestione stack MTA
-- Gestione database contatti (list hygiene)
-- Creazione dashboard per analisi metriche email
-- Collaborazione con designer e developer su template e feature
+- Configuration and management of MTA stack
+- Contact database management (list hygiene)
+- Dashboard creation for email metrics analysis
+- Collaboration with designers and developers on templates and features
 
 ---
 
 ### System Engineer
 
-**MailUp** | Cremona | _Febbraio 2010 - Giugno 2015_
+**MailUp** | Cremona | _February 2010 - June 2015_
 
-Piattaforma di direct marketing multi-canale (email, SMS, social media).
+Multi-channel direct marketing platform (email, SMS, social media).
 
-- Installazione e manutenzione infrastruttura IT (front-end e back-end)
-- Implementazione servizi AWS (S3, CloudFront) per clienti US
-- Installazione e manutenzione MTA
+- Installation and maintenance of IT infrastructure (front-end and back-end)
+- Implementation of AWS services (S3, CloudFront) for US clients
+- MTA installation and maintenance
 
 ---
 
 ### System & Network Administrator
 
-**TAS Spa** | Parma | _Marzo 2007 - Gennaio 2010_
+**TAS Spa** | Parma | _March 2007 - January 2010_
 
-Soluzioni software per electronic money, payment systems e capital markets.
+Software solutions for electronic money, payment systems, and capital markets.
 
-- Gestione sistemi informativi e service level
-- Unificazione infrastrutture Parma e Bologna
+- IT systems and service level management
+- Infrastructure unification for Parma and Bologna offices
 
 ---
 
 ### IT Manager
 
-**Assicuratrice Milanese S.p.A.** | Modena | _Marzo 2004 - Febbraio 2007_
+**Assicuratrice Milanese S.p.A.** | Modena | _March 2004 - February 2007_
 
-Compagnia assicurativa specializzata in RC auto.
+Insurance company specialized in motor liability.
 
-- Sviluppo software per gestione e analisi dati
-- Progettazione soluzioni IT per integrazione workflow
-- Migrazione da CODALIA a PassCompagnia (RGI SpA)
-- Data analysis e reportistica per business users
-
----
-
-### Analista Programmatore Junior
-
-**InfoTrend SpA (Gruppo Finmatica)** | Brescia | _Febbraio 2002 - Febbraio 2004_
-
-Technical manager del progetto FINeAGENCY, web application per la gestione polizze.
-
-- Gestione progetti di migrazione
-- Raccolta feedback clienti
-- Analisi funzionale
+- Software development for data management and analysis
+- IT solutions design for workflow integration
+- Migration from CODALIA to PassCompagnia (RGI SpA)
+- Data analysis and reporting for business users
 
 ---
 
-## Competenze Tecniche
+### Junior Analyst Programmer
+
+**InfoTrend SpA (Finmatica Group)** | Brescia | _February 2002 - February 2004_
+
+Technical manager for the FINeAGENCY project, a web application for policy management.
+
+- Migration project management
+- Customer feedback collection
+- Functional analysis
+
+---
+
+## Technical Skills
 
 ### Data Governance & Quality
 
-| Tecnologia               | Livello  |
+| Technology               | Level    |
 | ------------------------ | -------- |
 | Informatica EDC          | Expert   |
 | Informatica Axon         | Expert   |
@@ -183,7 +183,7 @@ Technical manager del progetto FINeAGENCY, web application per la gestione poliz
 
 ### Data Integration
 
-| Tecnologia                 | Livello  |
+| Technology                 | Level    |
 | -------------------------- | -------- |
 | Informatica PowerCenter    | Expert   |
 | Dynamic Data Masking (DDM) | Advanced |
@@ -191,7 +191,7 @@ Technical manager del progetto FINeAGENCY, web application per la gestione poliz
 
 ### Development & Infrastructure
 
-| Tecnologia           | Livello      |
+| Technology           | Level        |
 | -------------------- | ------------ |
 | Python               | Advanced     |
 | SQL                  | Expert       |
@@ -200,7 +200,7 @@ Technical manager del progetto FINeAGENCY, web application per la gestione poliz
 
 ### Email & Messaging Systems
 
-| Tecnologia           | Livello  |
+| Technology           | Level    |
 | -------------------- | -------- |
 | MTA Configuration    | Expert   |
 | MailerQ, RabbitMQ    | Advanced |
@@ -208,7 +208,7 @@ Technical manager del progetto FINeAGENCY, web application per la gestione poliz
 
 ---
 
-## Certificazioni
+## Certifications
 
 - **GPTS-CLAIRE AI Foundation Certification**
 - **ITIL 4 Foundation** - Certificate in IT Service Management
@@ -218,49 +218,49 @@ Technical manager del progetto FINeAGENCY, web application per la gestione poliz
 
 ---
 
-## Formazione
+## Education
 
 ### Erasmus - Pierre and Marie Curie University
 
-**Parigi, Francia** | _Gennaio 1999 - Giugno 1999_
+**Paris, France** | _January 1999 - June 1999_
 
-Programma Erasmus in Computer Science: programmazione, algoritmi e sviluppo software.
+Erasmus program in Computer Science: programming, algorithms, and software development.
 
-### Perito Informatico
+### Computer Science Technical Diploma
 
-**ITIS Galileo Galilei** | _Settembre 1989 - Luglio 1994_
-
----
-
-## Altre Esperienze
-
-### Consigliere Comunale e Vicesindaco
-
-**Comune di Pianengo** | _Aprile 1997 - Giugno 2016_
-
-- Vicesindaco (2001-2004)
-- Assessore alla Cultura (1997-2001)
-- Consigliere Comunale (2011-2016)
+**ITIS Galileo Galilei** | _September 1989 - July 1994_
 
 ---
 
-## Lingue
+## Other Experience
 
-| Lingua   | Livello              |
+### City Councilor and Deputy Mayor
+
+**Municipality of Pianengo** | _April 1997 - June 2016_
+
+- Deputy Mayor (2001-2004)
+- Councilor for Culture (1997-2001)
+- City Councilor (2011-2016)
+
+---
+
+## Languages
+
+| Language | Level                |
 | -------- | -------------------- |
-| Italiano | Madrelingua          |
-| Inglese  | Professional Working |
-| Francese | Limited Working      |
+| Italian  | Native               |
+| English  | Professional Working |
+| French   | Limited Working      |
 
 ---
 
-## Contatti
+## Contact
 
 - 📧 **Email**: [lorenzo.lombardi@gmail.com](mailto:lorenzo.lombardi@gmail.com)
 - 💼 **LinkedIn**: [linkedin.com/in/lorenzolombardi](https://linkedin.com/in/lorenzolombardi)
 - 🐙 **GitHub**: [github.com/thrama](https://github.com/thrama)
-- 📍 **Località**: Crema (CR), Lombardia, Italia
+- 📍 **Location**: Crema (CR), Lombardy, Italy
 
 ---
 
-_Ultimo aggiornamento: Gennaio 2025_
+_Last updated: January 2025_

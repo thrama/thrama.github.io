@@ -1,54 +1,61 @@
 ---
-title: "Links & Risorse"
+title: "Links & Resources"
 date: 2026-01-01
 draft: false
 ShowToc: true
 TocOpen: true
 ---
 
-Una raccolta curata di risorse utili nel campo del Data Management, Data Governance e tecnologie correlate.
+A hand-picked selection of resources I find valuable: technical references, tools, and articles — along with non-technical reads and recommendations that I simply think are worth your time.
 
 ---
 
 ## Data Governance
 
-- [DAMA-DMBOK](https://www.dama.org/cpages/body-of-knowledge) - Il framework di riferimento per il Data Management
-- [Data Governance Institute](https://datagovernance.com/) - Risorse e framework DGI
-- [Gartner Data & Analytics](https://www.gartner.com/en/information-technology/insights/data-and-analytics) - Research e trend
+- [DAMA-DMBOK](https://www.dama.org/cpages/body-of-knowledge) - The reference framework for Data Management
+- [Data Governance Institute](https://datagovernance.com/) - DGI resources and frameworks
+- [Gartner Data & Analytics](https://www.gartner.com/en/information-technology/insights/data-and-analytics) - Research and trends
 
 ## Informatica
 
-- [Informatica Documentation](https://docs.informatica.com/) - Documentazione ufficiale
-- [Informatica Network](https://network.informatica.com/) - Community e knowledge base
-- [Informatica University](https://www.informatica.com/services-and-training/informatica-university.html) - Training e certificazioni
+- [Informatica Documentation](https://docs.informatica.com/) - Official documentation
+- [Informatica Network](https://network.informatica.com/) - Community and knowledge base
+- [Informatica University](https://www.informatica.com/services-and-training/informatica-university.html) - Training and certifications
 
 ## Data Quality
 
-- [Data Quality Pro](https://www.dataqualitypro.com/) - Articoli e risorse sulla qualità dei dati
+- [Data Quality Pro](https://www.dataqualitypro.com/) - Articles and resources on data quality
 - [TDWI](https://tdwi.org/) - The Data Warehousing Institute
 
 ## Python & Data Engineering
 
-- [Real Python](https://realpython.com/) - Tutorial Python di qualità
-- [Awesome Data Engineering](https://github.com/igorbarinov/awesome-data-engineering) - Curated list su GitHub
+- [Real Python](https://realpython.com/) - Quality Python tutorials
+- [Awesome Data Engineering](https://github.com/igorbarinov/awesome-data-engineering) - Curated list on GitHub
 - [Data Engineering Weekly](https://www.dataengineeringweekly.com/) - Newsletter
 
-## Blog Tecnici
+## Technical Blogs
 
-- [Martin Fowler](https://martinfowler.com/) - Architettura software e data mesh
-- [Data Mesh Architecture](https://www.datamesh-architecture.com/) - Risorse sul data mesh
+- [Martin Fowler](https://martinfowler.com/) - Software architecture and data mesh
+- [Data Mesh Architecture](https://www.datamesh-architecture.com/) - Data mesh resources
 
-## Tool & Utility
+## Tools & Utilities
 
-- [DBDiagram](https://dbdiagram.io/) - Diagrammi ER online
-- [JSON Crack](https://jsoncrack.com/) - Visualizzatore JSON
-- [Regex101](https://regex101.com/) - Tester regex
+- [DBDiagram](https://dbdiagram.io/) - Online ER diagrams
+- [JSON Crack](https://jsoncrack.com/) - JSON visualizer
+- [Regex101](https://regex101.com/) - Regex tester
 
-## Podcast
+## Podcasts
 
-- [Data Engineering Podcast](https://www.dataengineeringpodcast.com/)
-- [Analytics Power Hour](https://analyticshour.io/)
+Below are the podcast I follow from the Il Post:
 
----
+- [Morning](https://www.ilpost.it/podcasts/morning/) - La rassegna stampa del Post
+- [Indagini](https://www.ilpost.it/podcasts/indagini/) - Cosa è successo dopo alcuni dei più noti casi di cronaca nera italiana
+- [Wilson](https://www.ilpost.it/podcasts/wilson/)
+- [Globo](https://www.ilpost.it/podcasts/globo/)
+- [Geniale](https://www.ilpost.it/podcasts/geniale/) - Come l'intelligenza artificiale sta cambiando le nostre vite, in collaborazione con FAIR
 
-_Suggerisci una risorsa: [contattami](/about)_
+Other podcast:
+
+- [Non hanno un amico](https://choramedia.com/podcast/non-hanno-un-amico/) - Di Luca Bizzarri
+- [Phastidio.net](https://phastidio.net/) - Di Mario Seminerio
+- [Don Chisciotte](http://donchisciottepodcast.it/) - Di Oscar Giannino, Clara Morelli, Carlo Alberto Carnevale Maffé e Renato Cifarelli

@@ -1,61 +1,21 @@
-#baseURL = "https://thrama.github.io/"
-baseURL = "http://localhost:1313/"
-languageCode = "it"
-defaultContentLanguage = "it"
+baseURL = "https://thrama.github.io/"
+languageCode = "en"
 title = "Lorenzo Lombardi"
 theme = "PaperMod"
 
-[languages]
-  [languages.it]
-    languageCode = "it"
-    languageName = "Italiano"
-    contentDir = "content/it"
-    weight = 1
-    title = "Lorenzo Lombardi"
-    [languages.it.params]
-      description = "Principal Data Architect | Data Governance & Informatica Expert"
-    [languages.it.params.homeInfoParams]
-      Title = "Lorenzo Lombardi"
-      Content = """
-Principal Data Architect @ NTT DATA Italia
-20+ anni di esperienza in Enterprise Data Management
-Specializzato in Data Governance e prodotti Informatica
-"""
-
-  [languages.en]
-    languageCode = "en"
-    languageName = "English"
-    contentDir = "content/en"
-    weight = 2
-    title = "Lorenzo Lombardi"
-    [languages.en.params]
-      description = "Principal Data Architect | Data Governance & Informatica Expert"
-    [languages.en.params.homeInfoParams]
-      Title = "Lorenzo Lombardi"
-      Content = """
-Principal Data Architect @ NTT DATA Italia
-20+ years of experience in Enterprise Data Management
-Specialized in Data Governance and Informatica products
-"""
-
-# Paginazione
-[pagination]
-  pagerSize = 10
-
-# Abilita emoji
-enableEmoji = false
-
 # Build settings
 enableRobotsTXT = true
+enableEmoji = false
 buildDrafts = false
 buildFuture = false
+
+[pagination]
+  pagerSize = 10
 
 [params]
   author = "Lorenzo Lombardi"
   description = "Principal Data Architect | Data Governance & Informatica Expert"
-
-  # Tema
-  defaultTheme = "auto"  # auto, light, dark
+  defaultTheme = "auto"
   ShowReadingTime = true
   ShowShareButtons = false
   ShowPostNavLinks = true
@@ -65,7 +25,14 @@ buildFuture = false
   ShowToc = true
   TocOpen = false
 
-  # Social icons (header)
+  [params.homeInfoParams]
+    Title = "Lorenzo Lombardi"
+    Content = """
+Principal Data Architect @ NTT DATA Italia
+20+ years of experience in Enterprise Data Management
+Specialized in Data Governance and Informatica products
+"""
+
   [[params.socialIcons]]
     name = "linkedin"
     url = "https://linkedin.com/in/lorenzolombardi"
@@ -78,73 +45,39 @@ buildFuture = false
     name = "email"
     url = "lorenzo [dot] lombardi [at] gmail [dot] com"
 
-# Menu italiano
-[[languages.it.menu.main]]
+[[menu.main]]
   identifier = "about"
-  name = "Chi Sono"
+  name = "About"
   url = "/about/"
   weight = 10
 
-[[languages.it.menu.main]]
+[[menu.main]]
   identifier = "cv"
   name = "CV"
   url = "/cv/"
   weight = 20
 
-[[languages.it.menu.main]]
-  identifier = "progetti"
-  name = "Progetti"
-  url = "/progetti/"
+[[menu.main]]
+  identifier = "projects"
+  name = "Projects"
+  url = "/projects/"
   weight = 30
 
-[[languages.it.menu.main]]
+[[menu.main]]
   identifier = "posts"
-  name = "Articoli"
+  name = "Articles"
   url = "/posts/"
   weight = 40
 
-[[languages.it.menu.main]]
+[[menu.main]]
   identifier = "links"
   name = "Links"
   url = "/links/"
   weight = 50
 
-# Menu inglese
-[[languages.en.menu.main]]
-  identifier = "about"
-  name = "About"
-  url = "/en/about/"
-  weight = 10
-
-[[languages.en.menu.main]]
-  identifier = "cv"
-  name = "CV"
-  url = "/en/cv/"
-  weight = 20
-
-[[languages.en.menu.main]]
-  identifier = "projects"
-  name = "Projects"
-  url = "/en/projects/"
-  weight = 30
-
-[[languages.en.menu.main]]
-  identifier = "posts"
-  name = "Articles"
-  url = "/en/posts/"
-  weight = 40
-
-[[languages.en.menu.main]]
-  identifier = "links"
-  name = "Links"
-  url = "/en/links/"
-  weight = 50
-
-# Output formats
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
-# Markup settings
 [markup]
   [markup.highlight]
     style = "dracula"
