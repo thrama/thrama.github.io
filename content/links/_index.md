@@ -5,7 +5,9 @@ draft: false
 ShowToc: true
 TocOpen: true
 ---
-
+- [not found](https://martinfowler.com/articles/data-mesh.html)
+  `#datamesh` `#architecture`
+  `2026-05-07`
 A hand-picked selection of resources I find valuable: technical references, tools, and articles — along with non-technical reads and recommendations that I simply think are worth your time.
 
 ---
