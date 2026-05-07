@@ -58,16 +58,10 @@ Specialized in AI-Enhanced Data Governance, Agentic AI, and Informatica products
   weight = 30
 
 [[menu.main]]
-  identifier = "posts"
-  name = "Articles"
-  url = "/posts/"
-  weight = 40
-
-[[menu.main]]
   identifier = "links"
   name = "Links"
   url = "/links/"
-  weight = 50
+  weight = 40
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
