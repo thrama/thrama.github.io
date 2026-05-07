@@ -1,5 +1,5 @@
 baseURL = "https://thrama.github.io/"
-languageCode = "en"
+locale = "en"
 title = "Lorenzo Lombardi"
 theme = "PaperMod"
 
@@ -14,7 +14,7 @@ buildFuture = false
 
 [params]
   author = "Lorenzo Lombardi"
-  description = "Principal Data Architect | Data Governance & Informatica Expert"
+  description = "Principal Data Architect | AI-Enhanced Data Governance & Lineage | Enterprise Solutions Architect"
   defaultTheme = "auto"
   ShowReadingTime = true
   ShowShareButtons = false
@@ -30,7 +30,7 @@ buildFuture = false
     Content = """
 Principal Data Architect @ NTT DATA Italia
 20+ years of experience in Enterprise Data Management
-Specialized in Data Governance and Informatica products
+Specialized in AI-Enhanced Data Governance, Agentic AI, and Informatica products
 """
 
   [[params.socialIcons]]
@@ -50,12 +50,6 @@ Specialized in Data Governance and Informatica products
   name = "About"
   url = "/about/"
   weight = 10
-
-[[menu.main]]
-  identifier = "cv"
-  name = "CV"
-  url = "/cv/"
-  weight = 20
 
 [[menu.main]]
   identifier = "projects"
