@@ -1,0 +1,33 @@
+{{- /*
+  Override della pagina 404 di PaperMod.
+
+  Il tema fornisce un layouts/404.html minimale; questo file lo sostituisce
+  perché ha la precedenza sui layout del tema. Gli shortcode non funzionano
+  nei template, quindi il gioco viene incluso come partial.
+*/ -}}
+{{- define "main" }}
+
+<article class="post-single">
+  <header class="post-header">
+    <h1 class="post-title" style="font-size:3rem;letter-spacing:.05em">404</h1>
+  </header>
+
+  <div class="post-content">
+    <p>
+      This page doesn't exist — a broken link, a typo, or something I moved
+      and forgot to redirect.
+    </p>
+    <p>
+      Since you're here anyway and there's nothing interesting to read, you may
+      as well play a round of <strong>Moon Runner</strong>.
+    </p>
+
+    {{ partial "moon-runner.html" . }}
+
+    <p style="text-align:center;margin-top:1.5rem">
+      <a href="{{ site.Home.RelPermalink }}">&larr; Back to the homepage</a>
+    </p>
+  </div>
+</article>
+
+{{- end }}

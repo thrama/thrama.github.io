@@ -1,13 +1,18 @@
 # Hugo build output
 public/
 resources/_gen/
+/resources/
+.hugo_build.lock
 
 # Hugo cache
 .hugo_build.lock
+/.hugo/
 
 # OS files
 .DS_Store
-Thumbs.db
+._*
+.Spotlight-V100
+.Trashes
 
 # Editor files
 *.swp

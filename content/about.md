@@ -36,6 +36,7 @@ I am the author of **AIPAF — AI Project Assessment Framework**, a structured, 
 
 **AI & Generative AI**
 
+- OpenAI Technical Practitioner - PartnerU
 - AI Agentic Applications Masterclass — Data Masters
 - Claude Code in Action — Anthropic
 - Introduction to Model Context Protocol — Anthropic
@@ -56,7 +57,7 @@ I am the author of **AIPAF — AI Project Assessment Framework**, a structured, 
 ### Languages
 
 - 🇮🇹 Italian (native)
-- 🇬🇧 English (professional)
+- 🇬🇧 English (professional — B2)
 - 🇫🇷 French (basic)
 
 ---

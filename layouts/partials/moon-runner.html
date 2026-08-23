@@ -1,0 +1,116 @@
+{{- /*
+  moon-runner — endless runner HTML5 Canvas.
+
+  Unica fonte di verità per markup, CSS e caricamento dello script.
+  Richiamabile sia da un template (404, layout custom) sia dallo shortcode
+  omonimo, che si limita a delegare qui.
+
+  Uso da template:   {{ partial "moon-runner.html" . }}
+  Uso da markdown:   la riga con moon-runner tra doppie graffe e minori/maggiori
+
+  Richiede: assets/js/moon-runner.js
+
+  Non serve alcun guard anti-duplicazione: lo script si auto-inizializza solo
+  sugli elementi [data-moon-runner] non ancora avviati, quindi anche una
+  doppia inclusione nella stessa pagina resta innocua.
+*/ -}}
+<style>
+.moon-runner{
+  --mr-space:#0b0b1e;
+  --mr-moon:#8f8fa8;
+  --mr-moon-dark:#5c5c74;
+  --mr-ui:#e8e8ff;
+  --mr-accent:#4de3ff;
+  --mr-alien:#7dff5e;
+  display:block;
+  max-width:960px;
+  margin:1.6rem auto;
+  outline:none;
+  font-family:'Courier New',ui-monospace,monospace;
+}
+.moon-runner *{box-sizing:border-box}
+.moon-runner .mr-screen{
+  position:relative;
+  background:var(--mr-space);
+  border:4px solid var(--mr-moon-dark);
+  box-shadow:0 0 0 4px #1a1a33;
+  transition:box-shadow .18s ease;
+}
+/* il bordo si illumina quando il gioco ha il focus: segnala che la
+   tastiera è "catturata" e che SPAZIO non farà più scorrere la pagina */
+.moon-runner:focus .mr-screen{
+  box-shadow:0 0 0 4px #1a1a33, 0 0 0 6px var(--mr-accent), 0 0 32px rgba(77,227,255,.35);
+}
+.moon-runner .mr-canvas{
+  display:block;
+  width:100%;
+  height:auto;
+  background:var(--mr-space);
+  image-rendering:pixelated;
+  image-rendering:crisp-edges;
+  touch-action:manipulation;
+  -webkit-tap-highlight-color:transparent;
+}
+.moon-runner .mr-pad{display:flex;gap:12px;padding-top:12px}
+.moon-runner .mr-btn{
+  flex:1;
+  padding:16px 0;
+  font:bold 16px/1 'Courier New',monospace;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  color:var(--mr-ui);
+  background:#1a1a33;
+  border:3px solid var(--mr-moon-dark);
+  cursor:pointer;
+  -webkit-tap-highlight-color:transparent;
+}
+.moon-runner .mr-btn:active{background:var(--mr-moon-dark)}
+.moon-runner .mr-jump{border-color:var(--mr-accent)}
+.moon-runner .mr-shoot{border-color:var(--mr-alien)}
+@media(min-width:700px){.moon-runner .mr-pad{display:none}}
+.moon-runner .mr-hint{
+  margin:.6rem 0 0;
+  color:var(--mr-moon);
+  font-size:11px;
+  letter-spacing:1px;
+  line-height:1.8;
+  text-align:center;
+}
+.moon-runner .mr-audio{
+  margin-left:.45rem;
+  padding:2px 8px;
+  font:inherit;
+  font-size:10px;
+  letter-spacing:1px;
+  color:var(--mr-moon);
+  background:transparent;
+  border:1px solid var(--mr-moon-dark);
+  border-radius:3px;
+  cursor:pointer;
+}
+.moon-runner .mr-audio:hover{color:var(--mr-accent);border-color:var(--mr-accent)}
+</style>
+{{- with resources.Get "js/moon-runner.js" }}
+  {{- $js := . -}}
+  {{- if hugo.IsProduction -}}
+    {{- $js = $js | minify | fingerprint -}}
+  {{- end }}
+<script src="{{ $js.RelPermalink }}"{{ with $js.Data.Integrity }} integrity="{{ . }}"{{ end }} defer></script>
+{{- else }}
+  {{- errorf "partial moon-runner: assets/js/moon-runner.js non trovato" -}}
+{{- end }}
+
+<div class="moon-runner" data-moon-runner tabindex="0" role="application"
+     aria-label="Moon Runner — gioco arcade">
+  <div class="mr-screen">
+    <canvas class="mr-canvas" width="384" height="200"></canvas>
+  </div>
+  <div class="mr-pad">
+    <button type="button" class="mr-btn mr-jump">&#9650; Salta</button>
+    <button type="button" class="mr-btn mr-shoot">&#128167; Spara</button>
+  </div>
+  <p class="mr-hint">
+    Clicca sul gioco per attivare i comandi &middot; SPAZIO / &uarr; salta (doppio!) &middot; X spara &middot; M audio
+    <button type="button" class="mr-audio">AUDIO ON</button>
+  </p>
+</div>

@@ -1,0 +1,4 @@
+# I template Go di Hugo non sono HTML: il formatter spezza le action
+# e le stringhe fra virgolette, rompendo il build.
+layouts/
+themes/

@@ -1,0 +1,12 @@
+{{- /*
+  moon-runner — shortcode.
+
+  Uso in un file markdown: la riga con moon-runner tra doppie graffe e
+  minori/maggiori
+
+  Tutto il markup, il CSS e il caricamento dello script vivono nel partial
+  omonimo, così la stessa implementazione serve sia le pagine di contenuto sia
+  i template (vedi layouts/404.html).
+*/ -}}
+
+{{ partial "moon-runner.html" . }}
