@@ -37,6 +37,8 @@ Open [http://localhost:1313](http://localhost:1313) in your browser.
 
 ```
 thrama.github.io/
+├── assets/
+│   └── js/moon-runner.js       # processed by Hugo Pipes
 ├── content/
 │   ├── about.md
 │   ├── links/
@@ -47,6 +49,7 @@ thrama.github.io/
 │       ├── infa-automation-examples.md
 │       └── lyrixgram.md
 ├── layouts/
+│   ├── 404.html            # overrides the PaperMod 404
 │   ├── partials/
 │   └── shortcodes/
 ├── static/
@@ -54,6 +57,10 @@ thrama.github.io/
 ├── themes/PaperMod/
 └── hugo.toml
 ```
+
+Files in `static/` are copied verbatim into the build output. Files in
+`assets/` go through Hugo Pipes and are minified and fingerprinted in
+production builds.
 
 ---
 
@@ -105,6 +112,18 @@ hugo new projects/project-name.md
 # Check configuration
 hugo config
 ```
+
+---
+
+## Notes
+
+### Hugo templates and code formatters
+
+Files under `layouts/` are Go templates, not HTML. Prettier and similar
+formatters reflow template actions and break quoted strings across lines,
+which makes the build fail with errors like `unterminated quoted string`.
+They are excluded via `.prettierignore` — don't remove it, and don't run a
+formatter on them manually.
 
 ---
 
