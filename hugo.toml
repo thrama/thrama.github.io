@@ -1,5 +1,5 @@
 baseURL = "https://www.lorenzolombardi.it/"
-languageCode = "en"
+locale = "en"
 title = "Lorenzo Lombardi"
 theme = "PaperMod"
 
