@@ -2,7 +2,7 @@
 
 Personal site built with [Hugo](https://gohugo.io/) and the [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme, hosted on GitHub Pages.
 
-🌐 Live at: [https://thrama.github.io](https://thrama.github.io)
+🌐 Live at: [https://lorenzolombardi.it](https://lorenzolombardi.it)
 
 ---
 
@@ -38,29 +38,29 @@ Open [http://localhost:1313](http://localhost:1313) in your browser.
 ```
 thrama.github.io/
 ├── assets/
-│   └── js/moon-runner.js       # processed by Hugo Pipes
+│   └── js/moon-runner.js       # Game logic (processed via Hugo Pipes)
 ├── content/
 │   ├── about.md
 │   ├── links/
-│   │   └── _index.md       # Curated links feed (managed via Telegram bot)
+│   │   └── _index.md           # Curated links feed (managed via Telegram bot)
 │   └── projects/
 │       ├── _index.md
+│       ├── aipaf.md
 │       ├── coding-test.md
 │       ├── infa-automation-examples.md
 │       └── lyrixgram.md
 ├── layouts/
-│   ├── 404.html            # overrides the PaperMod 404
+│   ├── 404.html                # Easter egg: serves Moon Runner
 │   ├── partials/
+│   │   └── moon-runner.html    # Single source of truth (markup + CSS + script)
 │   └── shortcodes/
+│       └── moon-runner.html    # Thin delegate to the partial
 ├── static/
 │   └── css/custom.css
 ├── themes/PaperMod/
+├── .prettierignore             # Keeps the formatter away from Go templates
 └── hugo.toml
 ```
-
-Files in `static/` are copied verbatim into the build output. Files in
-`assets/` go through Hugo Pipes and are minified and fingerprinted in
-production builds.
 
 ---
 
@@ -78,6 +78,22 @@ hugo new projects/project-name.md
 
 Links are managed automatically via the [Hugo Links Bot](https://github.com/thrama/hugo-links-bot).
 Send a message to the Telegram bot and the link is added to `content/links/_index.md` and deployed automatically.
+
+---
+
+## Moon Runner
+
+Hitting any 404 URL serves **Moon Runner**, an endless runner on HTML5 Canvas.
+All markup, CSS, and script loading live in `layouts/partials/moon-runner.html`;
+`layouts/shortcodes/moon-runner.html` simply delegates to the partial, so the same
+implementation serves both templates and content pages.
+
+The script auto-initializes on every `[data-moon-runner]` element that hasn't
+booted yet, so a double inclusion on the same page is harmless.
+
+`moon.lorenzolombardi.it` redirects straight to the game.
+
+> ⚠️ Never run Prettier on `layouts/` — it breaks Go template actions. See `.prettierignore`.
 
 ---
 
@@ -112,18 +128,6 @@ hugo new projects/project-name.md
 # Check configuration
 hugo config
 ```
-
----
-
-## Notes
-
-### Hugo templates and code formatters
-
-Files under `layouts/` are Go templates, not HTML. Prettier and similar
-formatters reflow template actions and break quoted strings across lines,
-which makes the build fail with errors like `unterminated quoted string`.
-They are excluded via `.prettierignore` — don't remove it, and don't run a
-formatter on them manually.
 
 ---
 

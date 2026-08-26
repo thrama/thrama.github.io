@@ -20,7 +20,7 @@ I've also learned that titles describe roles, but outcomes are always the result
 
 At NTT DATA, I lead data governance initiatives and develop complex architectural solutions for enterprise clients within the Data Intelligence & AI team. I also oversee the **Informatica Competence Center**, established as the central authority on Informatica implementations and best practices across the organization.
 
-I am the author of **AIPAF — AI Project Assessment Framework**, a structured, modular approach to evaluating enterprise AI projects grounded in NIST AI RMF, ISO/IEC 42001, EU AI Act, and the Anthropic Responsible Scaling Policy.
+Outside of client work, I am the author and maintainer of **[AIPAF — AI Project Assessment Framework](/projects/aipaf/)**, a structured, modular approach to evaluating enterprise AI projects grounded in NIST AI RMF 1.0, ISO/IEC 42001:2023, and the EU AI Act. The reference implementation — a Python CLI with a deterministic scoring engine and an optional RAG layer — is [open source on GitHub](https://github.com/thrama/aipaf) under the MIT license.
 
 ### Specializations
 
@@ -30,6 +30,7 @@ I am the author of **AIPAF — AI Project Assessment Framework**, a structured, 
 - **Data Lineage & Metadata** — Solutions for compliance, data trust, and AI-enhanced discovery
 - **Agentic AI** — Multi-agent architectures, Model Context Protocol (MCP) server design, LLM integration patterns, tool use / function calling
 - **Generative AI for Data** — Retrieval-Augmented Generation (RAG), ML for anomaly detection and predictive data quality, LLM integration in governance workflows
+- **AI Governance** — Structured assessment of AI projects against NIST AI RMF, ISO/IEC 42001, and the EU AI Act
 - **Integration & Automation** — Python and Bash scripting to integrate, monitor, and extract information from enterprise platforms
 
 ### Certifications
